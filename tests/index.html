@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TODO テスト</title>
+  <style>
+    body { margin: 24px; font-family: system-ui, -apple-system, "Hiragino Sans", sans-serif; line-height: 1.6; }
+    #summary { font-size: 1.125rem; font-weight: 700; }
+    #results { padding-left: 1.5em; }
+    #results li { white-space: pre-wrap; }
+    .pass { color: #1a7f37; }
+    .fail { color: #cf222e; }
+    .skip { color: #9a6700; }
+    .app-frame { width: 480px; height: 600px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h1>TODO テスト</h1>
+  <p id="summary">実行中…</p>
+  <ol id="results"></ol>
+
+  <script src="../src/todo-core.js"></script>
+  <script src="harness.js"></script>
+  <script src="core.test.js"></script>
+  <script src="ui.test.js"></script>
+  <script>TestHarness.run();</script>
+</body>
+</html>
